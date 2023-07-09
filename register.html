@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Digital Recruitment Solution - Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Digital Recruitment Solution</h1>
+        <p>The online platform for efficient and seamless hiring</p>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <form id="register-form" method="POST" action="#">
+          <label for="company-input">Company Name:</label><br />
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            maxlength="30"
+            id="company-input"
+            required
+          /><br />
+          <label for="email-input">Email:</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            maxlength="50"
+            id="email-input"
+            required
+          /><br />
+          <label for="password-input">Password:</label><br />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            maxlength="20"
+            id="password-input"
+            required
+          /><br />
+
+          <label for="confirm-password-input">Confirm Password:</label><br />
+          <input
+            type="password"
+            name="confirm_password"
+            placeholder="Confirm Password"
+            maxlength="20"
+            id="confirm-password-input"
+            required
+          /><br />
+
+          <input
+            type="button"
+            name="submit"
+            value="Register"
+            id="register-button"
+          /><br />
+        </form>
+
+        <p id="error-message"></p>
+      </div>
+
+      <div class="footer">
+        <p>© 2023 Digital Recruitment Solution. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
