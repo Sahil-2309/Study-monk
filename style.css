@@ -1,94 +1,77 @@
-/* Add some comments to explain the purpose of each section */
-/* Reset the default styles of the elements */
 * {
+  transition: all 0.3s ease;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
 }
 
-/* Create a container element that holds the header, content and footer */
 .container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Style the header element with a dark background and white text */
 .header {
   background-color: #333;
   color: white;
   padding: 20px;
 }
 
-/* Increase the font size of the header title */
 .header h1 {
   font-size: 36px;
 }
 
-/* Decrease the font size of the header subtitle */
 .header p {
   font-size: 18px;
 }
 
-/* Align the navigation menu to the right */
 .header nav {
   display: flex;
   justify-content: flex-end;
 }
 
-/* Remove the bullets from the navigation list */
 .header nav ul {
   list-style: none;
 }
 
-/* Display the navigation items horizontally with some space between them */
 .header nav ul li {
   display: inline-block;
   margin-left: 20px;
 }
 
-/* Remove the underline from the navigation links and keep the same color as the text */
 .header nav ul li a {
   color: white;
   text-decoration: none;
 }
 
-/* Make the content element grow to fill the remaining space */
 .content {
   flex-grow: 1;
   padding: 20px;
 }
 
-/* Increase the font size of the content title */
 .content h2 {
   font-size: 24px;
 }
 
-/* Remove the bullets from the content list */
 .content ul {
   list-style: none;
 }
 
-/* Add some margin below each content item */
 .content ul li {
   margin-bottom: 10px;
 }
 
-/* Add some styles for the form element */
-
-/* Use a box-shadow to create a subtle 3D effect for the form */
 .content form {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can change the color and size of the shadow to your preference */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Add some padding and background color to the form */
 .content form {
   padding: 20px;
-  background-color: white; /* You can change this color to your preference */
+  background-color: white;
 }
 #register-button,
 #login-button,
@@ -101,68 +84,58 @@
   cursor: pointer;
 }
 
-/* Add a hover effect for the register-button and login-button to make them darker when hovered over */
 #register-button:hover,
 #login-button:hover,
 #search-button:hover {
   background-color: #e68a00;
 }
 
-/* Add some margin to the register-button and login-button to create some space between them */
 #register-button,
 #login-button {
   margin: 10px;
 }
-/* Add some styles for the input fields */
+
 button {
   margin: 10px;
 }
 
-/* Use a border-bottom to create a minimalistic look for the input fields */
 .content form input {
   display: block;
   width: 100%;
   padding: 15px;
   margin-bottom: 10px;
-  border: none; /* Remove the default border */
-  border-bottom: 2px solid #333; /* You can change this color to your preference */
+  border: none;
+  border-bottom: 2px solid #333;
 }
 
-/* Change the color of the input fields when they are focused */
 .content form input:focus {
-  outline: none; /* Remove the default outline */
-  border-bottom-color: #ff9900; /* You can change this color to your preference */
+  outline: none;
+  border-bottom-color: #ff9900;
 }
 
-/* Add some styles for the button */
-
-/* Align the button to the right */
 .content form button {
   float: right;
 }
-
-/* Style the footer element with a dark background and white text */
-/* Add a position property to the footer element and set it to fixed */
+body {
+  overflow: hidden;
+}
 .footer {
   background-color: #333;
   color: white;
   padding: 20px;
-  position: fixed; /* This will make the footer stick to the bottom of the viewport */
+  position: fixed;
 }
 
-/* Add a bottom property to the footer element and set it to zero */
 .footer {
-  bottom: 0; /* This will align the footer to the bottom edge of the viewport */
+  bottom: 0;
 }
 
-/* Add a width property to the footer element and set it to 100% */
 .footer {
-  width: 100%; /* This will make the footer span the entire width of the viewport */
+  width: 100%;
 }
 
-/* Add some margin to the content element to create some space between it and the footer */
 .content {
-  margin-bottom: 40px; /* You can change this value to your preference */
+  margin-bottom: 40px;
 }
 
 @keyframes fade-in-animation {
@@ -174,7 +147,6 @@ button {
   }
 }
 
-/* Slide up the content element */
 .content {
   animation-name: slide-up-animation;
   animation-duration: 0.5s;
@@ -190,65 +162,50 @@ button {
   }
 }
 
-/* Add some styles for buttons */
-
-/* Use a bright color for buttons and add some padding and border-radius */
 button {
-  background-color: #ff9900; /* You can change this color to your preference */
-  color: white; /* You can change this color to your preference */
-  padding: 10px; /* You can change this value to your preference */
-  border-radius: 5px; /* You can change this value to your preference */
-  border: none; /* Remove the default border */
-  cursor: pointer; /* Change the cursor to a hand when hovering over buttons */
+  background-color: #ff9900;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
 
-/* Add a hover effect for buttons to make them darker when hovered over */
 button:hover {
-  background-color: #e68a00; /* You can change this color to your preference */
+  background-color: #e68a00;
 }
-/* Add some styles for the form element */
 
-/* Use a box-shadow to create a subtle 3D effect for the form */
 #search-form {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* You can change the color and size of the shadow to your preference */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Add some padding and background color to the form */
 #search-form {
   padding: 20px;
-  background-color: white; /* You can change this color to your preference */
+  background-color: white;
 }
 
-/* Add some styles for the input and select elements */
-
-/* Use a border-bottom to create a minimalistic look for the input and select elements */
 #search-form input,
 #search-form select {
   display: block;
   width: 100%;
   margin-bottom: 10px;
-  border: none; /* Remove the default border */
-  border-bottom: 2px solid #333; /* You can change this color to your preference */
+  border: none;
+  border-bottom: 2px solid #333;
 }
 
-/* Change the color of the input and select elements when they are focused */
 #search-form input:focus,
 #search-form select:focus {
-  outline: none; /* Remove the default outline */
-  border-bottom-color: #ff9900; /* You can change this color to your preference */
+  outline: none;
+  border-bottom-color: #ff9900;
 }
 
-/* Add some styles for the label elements */
-
-/* Use a font-weight property to make the label elements bold */
 #search-form label {
-  font-weight: bold; /* You can change this value to your preference */
+  font-weight: bold;
 }
 
-/* Add some margin to the label elements to create some space between them and the input or select elements */
 #search-form label {
-  margin-bottom: 5px; /* You can change this value to your preference */
+  margin-bottom: 5px;
 }
